@@ -3,16 +3,23 @@ package com.example.mrides;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.mrides.Domain.Notification;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class NotificationActivity extends AppCompatActivity {
 
     private Typeface typeFace1;
     private TextView textViewTitle;
-    private Notification notification;
+//    private HashMap <String, String> notifications = new HashMap<>();
+//    notifications.put("John", "invitation");
+//    notifications.put("Jane", "confirmation");
+//    notifications.put("Gray", "invitation");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +30,19 @@ public class NotificationActivity extends AppCompatActivity {
         typeFace1 = Typeface.createFromAsset(getAssets(), "Ubuntu-L.ttf");
         textViewTitle.setTypeface(typeFace1);
 
+        ArrayList<String> notifications = new ArrayList<>();
+        notifications.add("John invited you to be a part of their route");
+        notifications.add("Jane invited you to be a part of their route");
+        notifications.add("Carl confirmed your invitation");
+        notifications.add("Carly left your route");
+
+        ListView notificationView  = (ListView) findViewById(R.id.notificationList);
+        
+
+
+
+
+
     }
+
 }

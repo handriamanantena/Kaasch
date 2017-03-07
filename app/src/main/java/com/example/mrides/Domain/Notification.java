@@ -1,10 +1,16 @@
 package com.example.mrides.Domain;
 
+import java.util.HashMap;
+
 public class Notification {
 
     private User sender;
     private String type;
+    private HashMap <User, String> notificationHash;
 
+    public Notification() {
+        notificationHash = new HashMap<>();
+    }
 
     public User getSender() {
         return sender;
