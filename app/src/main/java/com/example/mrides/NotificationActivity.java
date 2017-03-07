@@ -37,7 +37,10 @@ public class NotificationActivity extends AppCompatActivity {
         notifications.add("Carly left your route");
 
         ListView notificationView  = (ListView) findViewById(R.id.notificationList);
-        
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, notifications);
+
+        notificationView.setAdapter(arrayAdapter);
 
 
 
