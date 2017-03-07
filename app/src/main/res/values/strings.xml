@@ -3,7 +3,7 @@
     <string name="Sign_In">Sign In</string>
 
     <string name="Register">Register"</string>
-  
+
     <string name="title_activity_preference_page">preference_page</string>
     <string name="route_name">Route Name :"</string>
     <string name="action_settings">Settings</string>
@@ -39,6 +39,9 @@
     <string name="server_client_id">1088243710681-d75jc2egu2if79t29mgpgk51tpbdvn63.apps.googleusercontent.com</string>
     <string name="url">http://successdrivingschool.ca</string>
     <string name="title_activity_temp_main">TempMainActivity</string>
+
+    <!--NotificationActivity-->
+    <string name="notificationTitle">Notification</string>
 
 
 </resources>
